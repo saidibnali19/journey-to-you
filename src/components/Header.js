@@ -14,7 +14,6 @@ export default function Header() {
                         height={500} />
                 </Link>
                 <Navigation />
-                <button>Donate</button>
             </header>
         </>
     )
