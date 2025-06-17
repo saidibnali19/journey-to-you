@@ -6,7 +6,7 @@ export default function Footer() {
         <>
             <footer>
                 <article>
-                    <Image src="/images/journey_to_you_logo.webp" alt="" width={500} height={500} />
+                    <Image src="/images/journey_to_you_logo.svg" alt="" width={194} height={164} />
                     <p>Where powerful stories meet actionable change. We amplify the voices of leaders making a difference globally, giving you the tools and inspiration to create your own impact.</p>
                 </article>
                 <nav>
@@ -34,8 +34,8 @@ export default function Footer() {
                         <li>
                             <Link href="https://www.instagram.com/journytoyou?igsh=cGFiczdvdnpoZm4x&utm_source=qr" target="_blank">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" id="instagram">
-                                    <path stroke="#000" stroke-linecap="round" stroke-linejoin="round" d="M3 7C3 4.79086 4.79086 3 7 3H17C19.2091 3 21 4.79086 21 7V17C21 19.2091 19.2091 21 17 21H7C4.79086 21 3 19.2091 3 17V7Z"></path>
-                                    <path stroke="#000" stroke-linecap="round" stroke-linejoin="round" d="M15 12C15 13.6569 13.6569 15 12 15 10.3431 15 9 13.6569 9 12 9 10.3431 10.3431 9 12 9 13.6569 9 15 10.3431 15 12zM18 7C18 7.55228 17.5523 8 17 8 16.4477 8 16 7.55228 16 7 16 6.44772 16.4477 6 17 6 17.5523 6 18 6.44772 18 7z"></path>
+                                    <path stroke="#000" strokeLinecap="round" strokeLinejoin="round" d="M3 7C3 4.79086 4.79086 3 7 3H17C19.2091 3 21 4.79086 21 7V17C21 19.2091 19.2091 21 17 21H7C4.79086 21 3 19.2091 3 17V7Z"></path>
+                                    <path stroke="#000" strokeLinecap="round" strokeLinejoin="round" d="M15 12C15 13.6569 13.6569 15 12 15 10.3431 15 9 13.6569 9 12 9 10.3431 10.3431 9 12 9 13.6569 9 15 10.3431 15 12zM18 7C18 7.55228 17.5523 8 17 8 16.4477 8 16 7.55228 16 7 16 6.44772 16.4477 6 17 6 17.5523 6 18 6.44772 18 7z"></path>
                                 </svg>
                             </Link>
                         </li>
@@ -52,8 +52,8 @@ export default function Footer() {
                         <li>
                             <Link href="https://anchor.fm/leigh-silako" target="_blank">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
-                                    <circle cx="8" cy="8" r="7.5" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" />
-                                    <path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M3.761 10.283c2.099-.489 5.442-.469 7.5.978M3.435 8c3.689-.754 6.506-.345 8.804 1.304m-9.13-3.587c3.057-1.08 7.378-.876 10.109.978" />
+                                    <circle cx="8" cy="8" r="7.5" fill="none" stroke="#000" strokeLinecap="round" strokeLinejoin="round" strokeMiterlimit="10" />
+                                    <path fill="none" stroke="#000" strokeLinecap="round" strokeLinejoin="round" strokeMiterlimit="10" d="M3.761 10.283c2.099-.489 5.442-.469 7.5.978M3.435 8c3.689-.754 6.506-.345 8.804 1.304m-9.13-3.587c3.057-1.08 7.378-.876 10.109.978" />
                                 </svg>
                             </Link>
                         </li>

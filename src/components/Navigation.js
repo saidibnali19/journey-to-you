@@ -7,23 +7,23 @@ export default function Navigation() {
     const pathname = usePathname()
 
     return (
-        <nav className="primary-nav | wrapper flex">
-            <ul className="flex" role="list">
+        <nav>
+            <ul className="fs-500 flex" role="list">
                 <li>
-                    <Link href="/">Home</Link>
+                    <Link className={pathname === "/" ? "current_page fw-bold" : "fw-bold"} href="/">Home</Link>
                 </li>
                 <li>
-                    <Link href="/about">About Us</Link>
+                    <Link className={pathname === "/about" ? "current_page fw-bold" : "fw-bold"} href="/about">About Us</Link>
                 </li>
                 <li>
-                    <Link href="/resources">Resources</Link>
+                    <Link className={pathname === "/resources" ? "current_page fw-bold" : "fw-bold"} href="/resources">Resources</Link>
 
                 </li>
                 <li>
-                    <Link href="/blog">Blog</Link>
+                    <Link className={pathname === "/blog" ? "current_page fw-bold" : "fw-bold"} href="/blog">Blog</Link>
                 </li>
                 <li>
-                    <Link href="/contact">Contact Us</Link>
+                    <Link className={pathname === "/contact" ? "current_page fw-bold" : "fw-bold"} href="/contact">Contact Us</Link>
                 </li>
             </ul>
         </nav>

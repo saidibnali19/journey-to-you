@@ -1,0 +1,517 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+    list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* Personal preferences */
+button {
+    color: inherit;
+    border: 0;
+    cursor: pointer;
+}
+
+/* Custom properties */
+:root {
+    /* Colours */
+    --clr-primary: 210 17% 98%; /* very light grey */
+    --clr-secondary: 0 0% 40%; /* very dark grey */
+    --clr-accent: 189 100% 35%; /* turquise */
+    --clr-dark: 20 52% 37%; /* dark brown */
+    --clr-light: 180 1% 77%; /* light grey */
+
+    /* @link https://utopia.fyi/type/calculator?c=320,14,1.333,1240,16,1.333,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+    --step--2: clamp(0.4925rem, 0.4682rem + 0.1217vw, 0.5625rem);
+    --step--1: clamp(0.6563rem, 0.6236rem + 0.163vw, 0.75rem);
+    --step-0: clamp(0.875rem, 0.8315rem + 0.2174vw, 1rem);
+    --step-1: clamp(1.1663rem, 1.1082rem + 0.2902vw, 1.3331rem);
+    --step-2: clamp(1.555rem, 1.4778rem + 0.3859vw, 1.7769rem);
+    --step-3: clamp(2.0725rem, 1.9695rem + 0.5152vw, 2.3688rem);
+    --step-4: clamp(2.7625rem, 2.6251rem + 0.687vw, 3.1575rem);
+    --step-5: clamp(3.6825rem, 3.4995rem + 0.9152vw, 4.2088rem);
+
+    /* @link https://utopia.fyi/space/calculator?c=320,14,1.333,1240,16,1.333,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l|m-l&g=s,l,xl,12 */
+    --space-3xs: clamp(0.25rem, 0.25rem + 0vw, 0.25rem);
+    --space-2xs: clamp(0.4375rem, 0.4158rem + 0.1087vw, 0.5rem);
+    --space-xs: clamp(0.6875rem, 0.6658rem + 0.1087vw, 0.75rem);
+    --space-s: clamp(0.875rem, 0.8315rem + 0.2174vw, 1rem);
+    --space-m: clamp(1.3125rem, 1.2473rem + 0.3261vw, 1.5rem);
+    --space-l: clamp(1.75rem, 1.663rem + 0.4348vw, 2rem);
+    --space-xl: clamp(2.625rem, 2.4946rem + 0.6522vw, 3rem);
+    --space-2xl: clamp(3.5rem, 3.3261rem + 0.8696vw, 4rem);
+    --space-3xl: clamp(5.25rem, 4.9891rem + 1.3043vw, 6rem);
+
+    /* One-up pairs */
+    --space-3xs-2xs: clamp(0.25rem, 0.163rem + 0.4348vw, 0.5rem);
+    --space-2xs-xs: clamp(0.4375rem, 0.3288rem + 0.5435vw, 0.75rem);
+    --space-xs-s: clamp(0.6875rem, 0.5788rem + 0.5435vw, 1rem);
+    --space-s-m: clamp(0.875rem, 0.6576rem + 1.087vw, 1.5rem);
+    --space-m-l: clamp(1.3125rem, 1.0734rem + 1.1957vw, 2rem);
+    --space-l-xl: clamp(1.75rem, 1.3152rem + 2.1739vw, 3rem);
+    --space-xl-2xl: clamp(2.625rem, 2.1467rem + 2.3913vw, 4rem);
+    --space-2xl-3xl: clamp(3.5rem, 2.6304rem + 4.3478vw, 6rem);
+
+    /* Custom pairs */
+    --space-s-l: clamp(0.875rem, 0.4837rem + 1.9565vw, 2rem);
+    --space-m-l: clamp(1.3125rem, 1.0734rem + 1.1957vw, 2rem);
+
+    --fs-900: var(--step-5);
+    --fs-800: var(--step-4);
+    --fs-700: var(--step-3);
+    --fs-600: var(--step-2);
+    --fs-500: var(--step-1);
+    --fs-400: var(--step-0);
+    --fs-300: var(--step--1);
+    --fs-200: var(--step--2);
+
+    --ff-heading: var(--playfair);
+    --ff-body: var(--lato);
+    --ff-accent: "Poppins", sans-serif;
+
+    --fw-bold: bold;
+    --fw-normal: normal;
+
+    --primary-header-min-height: 6rem;
+}
+
+/* Typography */
+.bg-primary {
+    background-color: hsl(var(--clr-primary));
+}
+
+.bg-secondary {
+    background-color: hsl(var(--clr-secondary));
+}
+
+.bg-light {
+    background-color: hsl(var(--clr-light));
+}
+
+.bg-dark {
+    background-color: hsl(var(--clr-dark));
+}
+
+.bg-accent {
+    background-color: hsl(var(--clr-accent));
+}
+
+.text-primary {
+    color: hsl(var(--clr-primary));
+}
+
+.text-secondary {
+    color: hsl(var(--clr-secondary));
+}
+
+.text-light {
+    color: hsl(var(--clr-light));
+}
+
+.text-dark {
+    color: hsl(var(--clr-dark));
+}
+
+.text-accent {
+    color: hsl(var(--clr-accent));
+}
+
+.fs-900 {
+    font-size: var(--fs-900);
+}
+
+.fs-800 {
+    font-size: var(--fs-800);
+}
+
+.fs-700 {
+    font-size: var(--fs-700);
+}
+
+.fs-600 {
+    font-size: var(--fs-600);
+}
+
+.fs-500 {
+    font-size: var(--fs-500);
+}
+
+.fs-900,
+.fs-800,
+.fs-700,
+.fs-600 {
+    line-height: 1.1;
+}
+
+.fs-400 {
+    font-size: var(--fs-400);
+    line-height: 1.6667;
+}
+
+.fs-300 {
+    font-size: var(--fs-300);
+}
+
+.ff-heading {
+    font-family: var(--ff-heading);
+}
+
+.ff-body {
+    font-family: var(--ff-body);
+}
+
+.ff-accent {
+    font-family: var(--ff-accent);
+}
+
+.fw-bold {
+    font-weight: bold;
+}
+
+.fw-normal {
+    font-weight: normal;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.capitalise {
+    text-transform: capitalize;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Buttons */
+.cta {
+    background: linear-gradient(135deg, #0097b2 0%, #00b8d4 100%);
+
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 4px 15px rgba(0, 151, 178, 0.3);
+
+    translate: 0;
+    scale: 1;
+    transition: all 0.3s ease;
+
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+
+    &:hover {
+        translate: 0 -3px;
+        scale: 1.05;
+        box-shadow: 0 8px 25px rgba(0, 151, 178, 0.4);
+    }
+}
+
+/* Cards */
+.card {
+    background-image: linear-gradient(145deg, #ffffff, #f8f9fa);
+    padding: var(--space-m);
+    border-radius: 1rem;
+    border: 1px solid #e9ecef;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+            90deg,
+            transparent,
+            rgba(0, 151, 178, 0.05),
+            transparent
+        );
+        transition: left 0.5s ease;
+    }
+
+    &:hover::before {
+        left: 100%;
+    }
+
+    &:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 35px rgba(0, 151, 178, 0.15);
+        border-color: hsl(var(--clr-accent));
+    }
+}
+
+/* Layout */
+.d-block {
+    display: block;
+}
+
+.wrapper {
+    max-width: 60rem;
+    margin-inline: auto;
+    padding-inline: var(--space-m);
+}
+
+.flow > * + * {
+    margin-block-start: var(--flow-space, var(--space-m));
+}
+
+.flex {
+    display: flex;
+    gap: var(--space-m);
+}
+
+.grid {
+    display: grid;
+    gap: var(--space-m);
+}
+
+/* Components */
+/* Header */
+.header {
+    background: radial-gradient(
+            circle at 20% 80%,
+            rgba(0, 151, 178, 0.08) 0%,
+            transparent 50%
+        ),
+        radial-gradient(
+            circle at 80% 20%,
+            rgba(143, 78, 45, 0.05) 0%,
+            transparent 50%
+        );
+    animation: pulse 4s ease-in-out infinite alternate;
+
+    > div {
+        outline: 3px solid red;
+        outline-offset: -3px;
+
+        padding-block: var(--space-m);
+
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* Humberger menu button */
+    /* Add functionality later */
+    button {
+        @media (width >= 35rem) {
+            display: none;
+        }
+    }
+
+    /* Design mobile navigation later */
+    nav {
+        @media (width < 35rem) {
+            display: none;
+        }
+    }
+
+    nav a {
+        transition: all 0.3s ease;
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: hsl(var(--clr-accent));
+            transition: width 0.3s ease;
+        }
+
+        &:hover::after {
+            width: 100%;
+        }
+    }
+
+    nav .current_page::after {
+        width: 100%;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.header_logo {
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+/* Hero section */
+.hero {
+    min-height: calc(100svh - 6.375rem);
+    min-height: calc(100vh - 6.375rem);
+
+    > div {
+        width: 100%;
+        place-content: center;
+
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            inset: 0 calc(-1 * (50vw - 50% - 0.5rem));
+            z-index: -1;
+            background-color: hsl(var(--clr-accent));
+            background-image: url("/images/journey_to_you_hero_image.webp");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center right;
+            background-blend-mode: multiply;
+        }
+    }
+
+    p {
+        max-width: 40ch;
+    }
+}
+
+/* About us section on homepage */
+.about-us {
+    padding-block: calc(2 * var(--space-2xl-3xl));
+    > article {
+        @media (width > 35rem) {
+            grid-template-columns: repeat(2, 16rem);
+        }
+
+        padding-block: var(--space-m);
+
+        justify-content: center;
+
+        > article {
+        }
+    }
+
+    img {
+        height: 2.5rem;
+        width: 2.5rem;
+        margin-inline: auto;
+    }
+}
+
+/* Programs section on homepage */
+.programs {
+    background-color: hsl(var(--clr-accent) / 0.05);
+    padding-block: calc(2 * var(--space-2xl-3xl));
+
+    > div {
+        > article {
+            > article {
+                padding: 0;
+
+                @media (width > 35rem) {
+                    grid-template-columns: 1fr 2fr;
+                    grid-template-rows: auto 1fr auto;
+
+                    &:nth-child(odd) {
+                        grid-template-columns: 2fr 1fr;
+
+                        img {
+                            grid-column: 2 / 3;
+                        }
+                    }
+                }
+
+                min-height: 50vh;
+                min-height: 50svh;
+
+                > div {
+                    padding: var(--space-m);
+
+                    grid-template-rows: subgrid;
+                    grid-row: span 3;
+
+                    a {
+                        justify-self: start;
+                    }
+                }
+
+                img {
+                    grid-row: 1 / 4;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: center right;
+                }
+            }
+        }
+    }
+}

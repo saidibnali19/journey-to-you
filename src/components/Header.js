@@ -5,15 +5,19 @@ import Navigation from "./Navigation";
 export default function Header() {
     return (
         <>
-            <header>
-                <Link href="/" className="logo">
-                    <Image
-                        src="/images/journey_to_you_logo.webp"
-                        alt="Journey to you logo"
-                        width={500}
-                        height={500} />
-                </Link>
-                <Navigation />
+            <header className="header">
+                <div className="wrapper flex">
+                    <Link href="/" >
+                        <Image
+                            className="header_logo"
+                            src="/images/journey_to_you_logo.svg"
+                            alt="Journey to you logo"
+                            width={194}
+                            height={164} />
+                    </Link>
+                    <button>Menu</button>
+                    <Navigation />
+                </div>
             </header>
         </>
     )
