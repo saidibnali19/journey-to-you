@@ -21,7 +21,7 @@ export default function Programs() {
                         <article className='card | grid'>
                             <div className="grid">
                                 <h4 className="fs-500 ff-heading text-accent">Community Story Collection</h4>
-                                <p>An open platform where grassroots organizations and individuals can submit their transformation stories. We curate and amplify these narratives through our annual "Unsung Heroes" feature series.</p>
+                                <p>An open platform where grassroots organizations and individuals can submit their transformation stories. We curate and amplify these narratives through our annual &quot;Unsung Heroes&quot; feature series.</p>
                                 <Link className="cta | text-primary fw-bold" href="#">
                                     Share Your Story
                                 </Link>
