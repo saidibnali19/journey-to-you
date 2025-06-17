@@ -276,7 +276,7 @@ button {
     background-image: linear-gradient(145deg, #ffffff, #f8f9fa);
     padding: var(--space-m);
     border-radius: 1rem;
-    border: 1px solid #e9ecef;
+    border: 1px solid hsl(var(--clr-accent));
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 
     transition: all 0.3s ease;
@@ -306,7 +306,6 @@ button {
     &:hover {
         transform: translateY(-10px);
         box-shadow: 0 15px 35px rgba(0, 151, 178, 0.15);
-        border-color: hsl(var(--clr-accent));
     }
 }
 
@@ -351,9 +350,6 @@ button {
     animation: pulse 4s ease-in-out infinite alternate;
 
     > div {
-        outline: 3px solid red;
-        outline-offset: -3px;
-
         padding-block: var(--space-m);
 
         justify-content: space-between;

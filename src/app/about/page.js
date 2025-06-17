@@ -6,10 +6,13 @@ import AboutHero from "@/components/about/AboutHero";
 export default function page() {
     return (
         <>
-            <AboutHero />
+            <article className="wrapper">
+                About Us
+            </article>
+            {/* <AboutHero />
             <AboutDescription />
             <AboutFounder />
-            <AboutContact />
+            <AboutContact /> */}
         </>
     )
 }

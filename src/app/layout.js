@@ -30,7 +30,7 @@ export default function RootLayout({ children }) {
       <body className="text-secondary bg-primary fs-400 ff-body">
         <Header />
         {children}
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html >
   );

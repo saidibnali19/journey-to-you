@@ -1,5 +1,3 @@
-import Image from "next/image";
-import styles from "./page.module.css";
 import Hero from "../components/Hero";
 import AboutUs from "../components/AboutUs";
 import Programs from "../components/Programs";
@@ -12,7 +10,7 @@ export default function Home() {
         <Hero />
         <AboutUs />
         <Programs />
-        <Blog />
+        {/* <Blog /> */}
       </main>
     </>
   );
