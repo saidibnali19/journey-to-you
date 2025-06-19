@@ -7,7 +7,7 @@ export default function Programs() {
             <article className='programs'>
                 <div className='wrapper flow'>
                     <h3 className='fs-600 ff-heading text-accent text-center'>Programs</h3>
-                    <article className='flow'>
+                    <article className=' grid'>
                         <article className='card | grid'>
                             <div className="grid">
                                 <h4 className="fs-500 ff-heading text-accent">Educational Outreach</h4>
