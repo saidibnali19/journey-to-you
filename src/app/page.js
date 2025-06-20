@@ -10,7 +10,7 @@ export default function Home() {
         <Hero />
         <AboutUs />
         <Programs />
-        {/* <Blog /> */}
+        <Blog />
       </main>
     </>
   );

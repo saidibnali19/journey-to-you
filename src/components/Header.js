@@ -10,7 +10,7 @@ export default function Header() {
                     <Link href="/" >
                         <Image
                             className="header_logo"
-                            src="/images/journey_to_you_logo.png"
+                            src="/images/journey_to_you_logo.webp"
                             alt="Journey to you logo"
                             width={500}
                             height={500} />
