@@ -476,9 +476,6 @@ button {
             grid-template-rows: 50svh auto 1fr auto;
 
             > article {
-                outline: 3px solid lime;
-                outline-offset: -3px;
-
                 padding: 0;
 
                 grid-template-rows: subgrid;
@@ -498,7 +495,7 @@ button {
                 }
             }
 
-            @media (width >35rem) {
+            @media (width > 35rem) {
                 grid-template-rows: auto 1fr auto;
 
                 > article {
