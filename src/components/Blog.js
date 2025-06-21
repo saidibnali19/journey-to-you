@@ -20,8 +20,7 @@ export default function Blog() {
                         slidesToShow: 2,
                     },
                     720: {
-                        // slidesToShow: 3,
-                        disabled: true, // disable slider at 720px and up
+                        // disabled: true, // disable slider at 720px and up
                     },
 
                 }

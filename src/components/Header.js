@@ -9,7 +9,7 @@ export default function Header() {
                 <div className="wrapper flex">
                     <Link href="/" >
                         <Image
-                            className="header_logo"
+                            className="logo"
                             src="/images/journey_to_you_logo.webp"
                             alt="Journey to you logo"
                             width={500}
