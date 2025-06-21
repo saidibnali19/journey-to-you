@@ -29,7 +29,9 @@ export default function RootLayout({ children }) {
     <html className={`${lato.variable} ${playfair.variable}`} lang="en" >
       <body className="text-secondary bg-primary fs-400 ff-body">
         <Header />
-        {children}
+        <main>
+          {children}
+        </main>
         <Footer />
       </body>
     </html >

@@ -6,12 +6,10 @@ import Blog from "../components/Blog";
 export default function Home() {
   return (
     <>
-      <main>
-        <Hero />
-        <AboutUs />
-        <Programs />
-        <Blog />
-      </main>
+      <Hero />
+      <AboutUs />
+      <Programs />
+      <Blog />
     </>
   );
 }

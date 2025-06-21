@@ -417,6 +417,13 @@ button {
     }
 }
 
+/* Main section */
+/* Remove these styles after blog and resources pages */
+main {
+    min-height: 100vh;
+    min-height: 100svh;
+}
+
 /* Hero section */
 .hero {
     min-height: calc(100svh - 6.375rem);
